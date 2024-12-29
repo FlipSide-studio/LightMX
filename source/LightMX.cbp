@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LightMX" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LightMX" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lopengl32" />
+					<Add option="-lglfw3" />
+					<Add option="-lglew32" />
+					<Add option="-lwinmm" />
+					<Add option="-lgdi32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LightMX" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="imconfig.h" />
+		<Unit filename="imgui.cpp" />
+		<Unit filename="imgui.h" />
+		<Unit filename="imgui_demo.cpp" />
+		<Unit filename="imgui_draw.cpp" />
+		<Unit filename="imgui_impl_glfw.cpp" />
+		<Unit filename="imgui_impl_glfw.h" />
+		<Unit filename="imgui_impl_opengl2.cpp" />
+		<Unit filename="imgui_impl_opengl2.h" />
+		<Unit filename="imgui_internal.h" />
+		<Unit filename="imgui_tables.cpp" />
+		<Unit filename="imgui_widgets.cpp" />
+		<Unit filename="imstb_rectpack.h" />
+		<Unit filename="imstb_textedit.h" />
+		<Unit filename="imstb_truetype.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
